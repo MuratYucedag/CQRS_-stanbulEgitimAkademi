@@ -1,0 +1,27 @@
+﻿@model GetStudentByIDQueryResult
+
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Öğrenci ID</label>
+        <input type="text" asp-for="StudentID" class="form-control" />
+        <br />
+        <label>Öğrenci Ad</label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <br />
+        <label>Öğrenci Soyadı</label>
+        <input type="text" asp-for="Surname" class="form-control" />
+        <br />
+        <label>Öğrenci Şehir</label>
+        <input type="text" asp-for="City" class="form-control" />
+        <br />
+        <label>Öğrenci Ortalama</label>
+        <input type="text" asp-for="LessonAverage" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Verileri Güncelle</button>
+    </form>
+</div>

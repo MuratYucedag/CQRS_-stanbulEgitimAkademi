@@ -1,0 +1,22 @@
+﻿@model CreateStudentCommand
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Öğrenci Adı</label>
+        <input type="text" class="form-control" asp-for="studentName" />
+        <br />
+        <label>Öğrenci Soyadı</label>
+        <input type="text" class="form-control" asp-for="studentSurname" />
+        <br />
+        <label>Öğrenci Bölümü</label>
+        <input type="text" class="form-control" asp-for="studentDepartment" />
+        <br />
+        <button class="btn btn-outline-primary">Öğrenciyi Ekle</button>
+    </form>
+</div>

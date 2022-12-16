@@ -1,0 +1,21 @@
+﻿@model CreateMemberCommand
+
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Üye Adı</label>
+        <input type="text" class="form-control" asp-for="Name" />
+        <br />
+        <label>Üye Soyadı</label>
+        <input type="text" class="form-control" asp-for="Surname" />
+        <br />
+        <label>Üye Şehir</label>
+        <input type="text" class="form-control" asp-for="City" />
+        <br />
+        <button class="btn btn-warning">Üyeyi Ekle</button>
+    </form>
+</div>

@@ -1,0 +1,34 @@
+﻿@model List<CQRS_İstanbulEgitimAkademi.CQRS.Results.ProductResults.GetProductQueryResult>
+
+
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <table class="table table-striped">
+        <tr>
+            <th>#</th>
+            <th>Ürün Adı</th>
+            <th>Stok Sayısı</th>
+            <th>Depo</th>
+            <th>Raf</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>@item.Name</td>
+                <td>@item.Stock</td>
+                <td>@item.Storage</td>
+                <td>@item.Shelf</td>
+                <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="#" class="btn btn-outline-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="#" class="btn btn-outline-primary">Yeni Ürün Girişi</a>
+</div>
